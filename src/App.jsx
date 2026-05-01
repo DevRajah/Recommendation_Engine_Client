@@ -5,8 +5,9 @@ import "./index.css";
 
 // Use your deployed backend URL here.
 // For local testing, use: http://localhost:5800
-const API_URL = "http://localhost:5800";
 //https://recommendation-engine-jfdd.onrender.com";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const actions = ["view", "like", "comment", "share"];
 
